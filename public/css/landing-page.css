@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
 /*!
  * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -21,6 +22,10 @@ h6 {
     font-weight: 700;
 }
 
+h1 {
+  font-size: 70px;
+}
+
 .topnav {
     font-size: 14px; 
 }
@@ -35,7 +40,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/background.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -44,6 +49,8 @@ h6 {
     padding-top: 20%;
     padding-bottom: 20%;
 }
+
+
 
 .intro-message > h1 {
     margin: 0;
@@ -57,9 +64,10 @@ h6 {
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+.intro-message .subtitle > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,1) !important;
 }
+
 
 @media(max-width:767px) {
     .intro-message {
