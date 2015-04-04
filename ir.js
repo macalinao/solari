@@ -1,3 +1,6 @@
+/*  SEE THE LAST 4 LINES DIRECTLY*/ 
+
+
 
 var tessel = require('tessel');
 var infraredlib = require('ir-attx4');
@@ -19,37 +22,33 @@ infrared.on('ready', function() {
           console.log("Signal sent!");
         }
       });
-    }, 3000); // Every 3 seconds
+    }, 5000); // Every 3 seconds
   } else {
     console.log(err);
   }
 });
 
-///////////   ********************************************
-//////////*INSTEAD OF PRINTING SEND IT TO SERVER*//////////////
 
-/*    int data2 =  get ()
-RETURN DATA2  which is true or false*/
 
+console.log("I'm checking you in for security Thank you for patience!");
+
+var led1 = tessel.led[0].output(0);
+var led2 = tessel.led[1].output(0);
 
 
 // If we get data, print it out
 infrared.on('data', function(data) {
 	console.log("Received RX Data: ", data);
-});
 
-
-console.log("I'm checking you in for security" Thank you for patience!);
-
-var led1 = tessel.led[0].output(1);
-var led2 = tessel.led[1].output(0);
-
-if  (data ==1)
+///// TRY PLAYING WITH DATA    IF DATA IS EMPTY TOGGLE LED 1 otherwise LED 2
+	
+if  (data == '')
 {
   led1.toggle();
 }
-else 
+else
 {
   led2.toggle();
 }
+});
 
