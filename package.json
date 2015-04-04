@@ -2,6 +2,9 @@
   "name": "solari",
   "description": "Lock it remotely without worrying.",
   "private": true,
+  "scripts": {
+    "start": "node app"
+  },
   "dependencies": {
     "express": "^4.12.3",
     "mongoose": "^4.0.1"
