@@ -26,10 +26,30 @@ infrared.on('ready', function() {
 });
 
 ///////////   ********************************************
-//////////INSTEAD OF PRINTING SEND IT TO SERVER//////////////
+//////////*INSTEAD OF PRINTING SEND IT TO SERVER*//////////////
+
+/*    int data2 =  get ()
+RETURN DATA2  which is true or false*/
+
 
 
 // If we get data, print it out
 infrared.on('data', function(data) {
 	console.log("Received RX Data: ", data);
 });
+
+
+console.log("I'm checking you in for security" Thank you for patience!);
+
+var led1 = tessel.led[0].output(1);
+var led2 = tessel.led[1].output(0);
+
+if  (data ==1)
+{
+  led1.toggle();
+}
+else 
+{
+  led2.toggle();
+}
+
