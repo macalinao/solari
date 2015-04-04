@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
 /*!
  * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -19,6 +20,10 @@ h5,
 h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+}
+
+h1 {
+  font-size: 70px;
 }
 
 .topnav {
@@ -59,9 +64,10 @@ h6 {
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,1);
+.intro-message .subtitle > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,1) !important;
 }
+
 
 @media(max-width:767px) {
     .intro-message {
